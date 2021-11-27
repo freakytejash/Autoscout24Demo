@@ -1,13 +1,11 @@
 package com.autoscout24.cardemo.adapter
 
-
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.autoscout24.cardemo.databinding.ItemRecyclerviewCarBinding
 import com.bumptech.glide.Glide
 import com.autoscout24.cardemo.model.CarDetailsItem
-import com.autoscout24.cardemo.model.CarNotesItem
 
 class CarAdapter : RecyclerView.Adapter<MainViewHolder>() {
 
@@ -58,14 +56,11 @@ class CarAdapter : RecyclerView.Adapter<MainViewHolder>() {
         carItemClickListener = listener
     }
 
-
     interface CarItemClickListener {
         fun onCarItemClick(item: CarDetailsItem)
     }
 
 }
-
-
 
 class MainViewHolder(val binding: ItemRecyclerviewCarBinding) : RecyclerView.ViewHolder(binding.root)
 

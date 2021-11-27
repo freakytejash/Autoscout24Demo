@@ -17,6 +17,5 @@ data class CarDetailsItem(
     val modelline: String,
     val price: Int,
     val seller: Seller,
-
     var note: CarNotesItem?= null
 ) : Parcelable

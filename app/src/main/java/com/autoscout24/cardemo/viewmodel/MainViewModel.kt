@@ -7,7 +7,5 @@ import javax.inject.Inject
 
 @HiltViewModel
 class MainViewModel @Inject constructor(val mainRepository: MainRepository) : ParentViewModel() {
-    var tag = "MainViewModel injected"
     lateinit var navController: NavController
-
 }

@@ -11,7 +11,6 @@ import com.limerse.slider.model.CarouselItem
 
 class CarDetailsFragment : Fragment(R.layout.fragment_car_details) {
 
-    //val carousel: ImageCarousel = findViewById(R.id.carousel)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -34,16 +33,13 @@ class CarDetailsFragment : Fragment(R.layout.fragment_car_details) {
                 }
         }
 
-
-
-
         binding.imgCarousal.setData(list)
 
     }
-    companion object {
+    /*companion object {
         fun navigateToDetails(navController: NavController) {
             navController.navigate(R.id.action_carListFragment_to_carDetailsFragment)
         }
-    }
+    }*/
 
 }

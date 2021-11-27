@@ -30,6 +30,5 @@ interface RetrofitService {
             }
             return retrofitService!!
         }
-
     }
 }

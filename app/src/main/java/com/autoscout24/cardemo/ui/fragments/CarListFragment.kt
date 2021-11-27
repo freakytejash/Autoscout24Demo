@@ -1,10 +1,8 @@
 package com.autoscout24.cardemo.ui.fragments
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import androidx.fragment.app.Fragment
 import android.view.View
-import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import com.autoscout24.cardemo.R
@@ -44,7 +42,6 @@ class CarListFragment : Fragment(R.layout.fragment_car_list) {
             adapter.setCarList(it)
         })
 
-
         viewModel.errorLiveData.observe(viewLifecycleOwner, {
             requireContext().showShortToast(it?: UNIVERSAL_ERROR_MESSAGE)
         })
@@ -62,7 +59,5 @@ class CarListFragment : Fragment(R.layout.fragment_car_list) {
                 }
             }
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, callback)
-
     }
-
 }

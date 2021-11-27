@@ -5,7 +5,6 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.autoscout24.cardemo.repository.MainRepository
 import com.autoscout24.cardemo.model.CarDetailsItem
-import com.autoscout24.cardemo.model.CarNotesItem
 import com.autoscout24.cardemo.network.ApiException
 import com.autoscout24.cardemo.util.UNIVERSAL_ERROR_MESSAGE
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -43,7 +42,4 @@ class CarListViewModel @Inject constructor(val mainRepository: MainRepository) :
             loader.set(false)
         }
     }
-
-
-
 }

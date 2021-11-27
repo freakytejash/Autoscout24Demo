@@ -15,7 +15,6 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private val viewModel: MainViewModel by viewModels()
-    private val adapter = CarAdapter()
     lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         val retrofitService = RetrofitService.getInstance()
         setupNavGraph()
-        val mainRepository = MainRepository(retrofitService)
     }
 
     private fun setupNavGraph() {

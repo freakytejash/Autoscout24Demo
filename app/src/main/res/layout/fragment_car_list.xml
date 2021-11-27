@@ -2,12 +2,11 @@
 <layout>
 
     <data>
-        <import type="android.view.View"></import>
+        <import type="android.view.View"/>
         <variable
             name="viewmodel"
             type="com.autoscout24.cardemo.viewmodel.CarListViewModel" />
     </data>
-
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -29,7 +28,6 @@
         android:visibility="@{viewmodel.loader?View.VISIBLE:View.GONE}"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <!-- TODO: Update blank fragment layout -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="0dp"

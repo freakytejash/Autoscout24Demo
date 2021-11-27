@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Autoscout24 Demo</string>
+    <string name="car_title">Car Title</string>
+    <string name="fuel">Fuel</string>
+    <string name="car_color">Color</string>
+    <string name="car_notes">Notes</string>
+    <string name="car_price">Price</string>
+    <string name="car_image">Image</string>
 
 </resources>
