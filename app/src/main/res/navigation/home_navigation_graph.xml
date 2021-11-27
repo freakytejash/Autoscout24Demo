@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation_graph"
+    app:startDestination="@id/splashFragment">
+
+
+    <fragment
+        android:id="@+id/carListFragment"
+        android:name="com.autoscout24.cardemo.ui.fragments.CarListFragment"
+        android:label="fragment_car_list"
+        tools:layout="@layout/fragment_car_list" >
+        <action
+            android:id="@+id/action_carListFragment_to_carDetailsFragment"
+            app:destination="@id/carDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/carDetailsFragment"
+        android:name="com.autoscout24.cardemo.ui.fragments.CarDetailsFragment"
+        android:label="fragment_car_details"
+        tools:layout="@layout/fragment_car_details">
+        <argument
+            android:name="carDetailsItem"
+            app:argType="com.autoscout24.cardemo.model.CarDetailsItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.autoscout24.cardemo.ui.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_carListFragment"
+            app:destination="@id/carListFragment" />
+
+    </fragment>
+</navigation>
