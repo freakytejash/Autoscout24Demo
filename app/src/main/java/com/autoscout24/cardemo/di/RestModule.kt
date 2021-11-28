@@ -3,7 +3,6 @@ package com.autoscout24.cardemo.di
 import android.content.Context
 import com.autoscout24.cardemo.BuildConfig
 import com.autoscout24.cardemo.network.RetrofitService
-import com.readystatesoftware.chuck.ChuckInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -31,19 +30,19 @@ class RestModule {
         return interceptor
     }
 
-    @Singleton
+    /*@Singleton
     @Provides
-    fun provideChuckInterceptor(@ApplicationContext context: Context) = ChuckInterceptor(context)
+    fun provideChuckInterceptor(@ApplicationContext context: Context) = ChuckInterceptor(context)*/
 
     @Singleton
     @Provides
     fun provideOkHttpClient(
         httpLoggingInterceptor: HttpLoggingInterceptor,
-        chuckInterceptor: ChuckInterceptor
+        //chuckInterceptor: ChuckInterceptor
     ): OkHttpClient =
         OkHttpClient.Builder()
             .addInterceptor(httpLoggingInterceptor)
-            .addInterceptor(chuckInterceptor)
+           // .addInterceptor(chuckInterceptor)
             .build()
 
     @Singleton

@@ -32,14 +32,6 @@ class CarDetailsFragment : Fragment(R.layout.fragment_car_details) {
                     )
                 }
         }
-
         binding.imgCarousal.setData(list)
-
     }
-    /*companion object {
-        fun navigateToDetails(navController: NavController) {
-            navController.navigate(R.id.action_carListFragment_to_carDetailsFragment)
-        }
-    }*/
-
 }

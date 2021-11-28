@@ -1,7 +1,6 @@
 package com.autoscout24.cardemo
 
 import android.app.Application
-import android.os.Debug
 import dagger.hilt.android.HiltAndroidApp
 import timber.log.Timber
 
