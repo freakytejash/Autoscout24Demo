@@ -101,7 +101,8 @@ dependencies {
     // Timber - Logging lib
     implementation "com.jakewharton.timber:timber:$timber"
 
-    implementation 'com.github.akshaaatt:Sliding-Carousel:1.0.1'
+    //For Sliding Carousal effect
+    implementation 'org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:2.0.5'
 
     //Unit Testing lib
     testImplementation "junit:junit:$junit"

@@ -3,11 +3,11 @@ package com.autoscout24.cardemo.ui.fragments
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
-import androidx.navigation.NavController
 import androidx.navigation.fragment.navArgs
 import com.autoscout24.cardemo.R
 import com.autoscout24.cardemo.databinding.FragmentCarDetailsBinding
-import com.limerse.slider.model.CarouselItem
+import org.imaginativeworld.whynotimagecarousel.model.CarouselItem
+
 
 class CarDetailsFragment : Fragment(R.layout.fragment_car_details) {
 
@@ -16,7 +16,7 @@ class CarDetailsFragment : Fragment(R.layout.fragment_car_details) {
 
         val binding= FragmentCarDetailsBinding.bind(view)
 
-        binding.imgCarousal.registerLifecycle(lifecycle)
+        binding.carousel.registerLifecycle(lifecycle)
 
         val list = mutableListOf<CarouselItem>()
         val args by navArgs<CarDetailsFragmentArgs>()
@@ -32,6 +32,6 @@ class CarDetailsFragment : Fragment(R.layout.fragment_car_details) {
                     )
                 }
         }
-        binding.imgCarousal.setData(list)
+        binding.carousel.setData(list)
     }
 }

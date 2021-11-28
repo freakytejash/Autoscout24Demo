@@ -5,9 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragments.CarDetailsFragment">
 
-    <com.limerse.slider.ImageCarousel
-                android:id="@+id/img_carousal"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" />
+    <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+        android:id="@+id/carousel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </FrameLayout>
