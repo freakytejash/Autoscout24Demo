@@ -14,7 +14,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class CarListViewModel @Inject constructor(val mainRepository: MainRepository) : ParentViewModel() {
+class CarListViewModel @Inject constructor(private val mainRepository: MainRepository) : ParentViewModel() {
 
     val carList = MutableLiveData<List<CarDetailsItem>>()
     val loader: ObservableBoolean = ObservableBoolean(false)

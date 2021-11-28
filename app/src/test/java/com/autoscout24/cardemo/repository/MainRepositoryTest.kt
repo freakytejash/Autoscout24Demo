@@ -10,7 +10,6 @@ import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito
 import com.google.gson.reflect.TypeToken
-import io.mockk.MockK
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery
 import io.mockk.mockk
@@ -20,8 +19,8 @@ import retrofit2.Response
 @ExperimentalCoroutinesApi
 class MainRepositoryTest {
 
-    lateinit var retrofitService: RetrofitService
-    lateinit var mainRepository: MainRepository
+    private lateinit var retrofitService: RetrofitService
+    private lateinit var mainRepository: MainRepository
 
     @Before
     fun setUp() {

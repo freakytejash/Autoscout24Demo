@@ -2,7 +2,7 @@ ext{
 //    System config
     compileSdk_Version = 30
     buildTool_Version = "30.0.3"
-    minSdk_Version = 21
+    minSdk_Version = 23
     targatedSdk_Version = 30
     vCode = 1
     vName = "1.0.0"

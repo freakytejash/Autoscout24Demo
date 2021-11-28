@@ -9,7 +9,7 @@ import com.autoscout24.cardemo.model.CarDetailsItem
 
 class CarAdapter : RecyclerView.Adapter<MainViewHolder>() {
 
-    val carList = mutableListOf<CarDetailsItem>()
+    private val carList = mutableListOf<CarDetailsItem>()
 
     private var carItemClickListener: CarItemClickListener? = null
 
@@ -39,7 +39,7 @@ class CarAdapter : RecyclerView.Adapter<MainViewHolder>() {
         var carImage = "http://via.placeholder.com/300.png"
         if(!car.images.isNullOrEmpty()) {
             for (i in car.images.indices) {
-                carImage = car.images.get(i).url
+                carImage = car.images[i].url
             }
             Glide.with(holder.itemView.context)
                  .load(carImage)

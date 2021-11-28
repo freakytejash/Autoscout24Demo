@@ -14,21 +14,7 @@ interface RetrofitService {
     @GET(".")
     suspend fun getAllCars() : Response<List<CarDetailsItem>>
 
-    @GET()
+    @GET
     suspend fun getNotes(@Url url:String) : Response<List<CarNotesItem>>
 
-    companion object {
-        var retrofitService: RetrofitService? = null
-
-        fun getInstance() : RetrofitService {
-            if (retrofitService == null) {
-                val retrofit = Retrofit.Builder()
-                    .baseUrl(BuildConfig.BASE_URL)
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build()
-                retrofitService = retrofit.create(RetrofitService::class.java)
-            }
-            return retrofitService!!
-        }
-    }
 }

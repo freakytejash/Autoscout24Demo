@@ -9,7 +9,7 @@ import javax.inject.Singleton
 @Singleton
 class MainRepository
 @Inject
-constructor(val retrofitService: RetrofitService): SafeApiRequest() {
+constructor(private val retrofitService: RetrofitService): SafeApiRequest() {
 
     suspend fun getAllCars() = execute { retrofitService.getAllCars() }
     suspend fun getNotes() = execute { retrofitService.getNotes(BuildConfig.NOTES_URL) }
