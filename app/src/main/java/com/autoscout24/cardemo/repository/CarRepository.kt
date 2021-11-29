@@ -7,7 +7,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class MainRepository
+class CarRepository
 @Inject
 constructor(private val retrofitService: RetrofitService): SafeApiRequest() {
 

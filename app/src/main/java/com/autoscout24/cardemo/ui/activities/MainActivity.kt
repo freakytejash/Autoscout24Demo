@@ -13,12 +13,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        //setupNavGraph()
     }
 
-    /*private fun setupNavGraph() {
-        val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.navHostFragmentContainer) as NavHostFragment
-        viewModel.navController = navHostFragment.navController
-    }*/
 }
