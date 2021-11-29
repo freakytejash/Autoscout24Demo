@@ -20,9 +20,9 @@ class CarDetailsFragment : Fragment(R.layout.fragment_car_details) {
 
         val list = mutableListOf<CarouselItem>()
         val args by navArgs<CarDetailsFragmentArgs>()
-        val productId = args.carDetailsItem
+        val carImage = args.carDetailsItem
 
-        productId.apply {
+        carImage.apply {
                 images.forEach {
                     list.add(
                         CarouselItem(

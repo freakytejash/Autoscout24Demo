@@ -36,11 +36,9 @@ class CarAdapter : RecyclerView.Adapter<MainViewHolder>() {
         holder.binding.tvColor.text = car.colour
         holder.binding.tvNote.text = car.note?.note?:""
 
-        var carImage = "http://via.placeholder.com/300.png"
+        val carImage: String
         if(!car.images.isNullOrEmpty()) {
-            for (i in car.images.indices) {
-                carImage = car.images[i].url
-            }
+            carImage = car.images[0].url
             Glide.with(holder.itemView.context)
                  .load(carImage)
                  .into(holder.binding.imageView)

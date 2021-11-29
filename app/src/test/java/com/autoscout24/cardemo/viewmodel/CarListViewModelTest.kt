@@ -1,24 +1,20 @@
 package com.autoscout24.cardemo.viewmodel
 
-import org.junit.After
+import org.junit.Assert.*
+
 import org.junit.Before
 import org.junit.Test
 
+class CarListViewModelTest {
 
-internal class CarListViewModelTest {
-
-   @Test
-   fun testGetAllCars() {
-
-   }
+    private lateinit var viewModel: CarListViewModel
 
     @Before
-    fun setup() {
+    fun setUp() {
 
     }
 
-    @After
-    fun tearDown() {
-
+    @Test
+    fun getLoadingLiveData() {
     }
 }

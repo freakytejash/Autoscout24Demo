@@ -14,7 +14,6 @@ ext{
     lifecycle_extensions = "2.2.0"
     lifecycle = "2.3.1"
     timber = "4.7.1"
-    leakcanary_android = "2.7"
     coroutines = "2.3.1"
     coroutines_core = "1.3.9"
     coroutines_android = "1.5.0"
@@ -25,9 +24,6 @@ ext{
     navigation = "2.3.5"
     hilt_dagger = "2.37"
     hilt_dagger_view_model = "1.0.0-alpha03"
-    chuck = "1.1.0"
-    circleimageview = "3.1.0"
-    circleindicator = "2.1.6"
     recyclerview = "1.2.1"
 
 //    Testing
